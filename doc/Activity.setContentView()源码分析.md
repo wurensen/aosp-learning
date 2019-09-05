@@ -297,7 +297,7 @@ protected ViewGroup generateLayout(DecorView decor) {
 
 根据该分析过程，可以梳理出对应的函数调用时序图：
 
-![Activity.setContentView()时序图](./Activity.setContentView()时序图.jpg)
+![Activity.setContentView()时序图](./imgs/Activity.setContentView()时序图.jpg)
 
 ## 总结
 
