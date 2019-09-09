@@ -6,7 +6,7 @@
 
 都知道给`Activity`设置布局是在`onCreate()`中调用`setContentView(R.layout.xxx)`，但是调用该函数会发生什么？
 
-## 着手分析
+## 解惑之旅
 
 > 源码版本：（AOSP）android-9.0.0-r40
 >
@@ -299,6 +299,18 @@ protected ViewGroup generateLayout(DecorView decor) {
 
 ![Activity.setContentView()时序图](./imgs/Activity.setContentView()时序图.jpg)
 
-## 总结
+## 得到答案
 
 由上节分析可知，`Activity.setContentView()`实质是通过`PhoneWindow.setContentView()`来实现的，每个`PhoneWindow`又有一个`DecorView`，该`DecorView`根据不同的配置解析不同的布局，并且布局中包含了id为`com.android.internal.R.id.content`的`ViewGroup`（一般都是`FrameLayout`），最终把开发者传入的布局添加到该视图上。
+
+## 新的疑问
+
+看到这又产生了新的疑惑：
+
+1. `DecorView`是什么
+2. `DecorView`跟`PhoneWindow`又是什么关系
+3. 谁才是布局树真正的根
+
+带着疑问，继续aosp的学习之旅。
+
+> Android是一个庞大的系统，所以很多内容不可能通过一篇文章就能彻底了解，往往一个疑问得到解释，又会产生新的疑问，只有深入到足够的深度，才能彻底弄懂。

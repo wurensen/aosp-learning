@@ -37,7 +37,7 @@
 
 ### framework
 
-> 目录结构对应于上文架构图
+> 目录结构对应于上文架构图，有些文章内容会涉及到多个部分。
 
 #### Activity
 
@@ -45,7 +45,7 @@
 
 #### Window
 
-
+1. [寻找Activity布局树的根](./doc/寻找Activity布局树的根.md)
 
 ### Linux Kernel
 
