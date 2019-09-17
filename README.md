@@ -27,9 +27,9 @@
 
 > 关于如何下载编译并运行模拟器，查看官网和其它博客说明。以下记录几个关键点：
 >
-> 1. 同步代码时使用网上提供好的重试脚本
-> 2. 自己用的Mac电脑编译时选择`aosp_x86-eng`，成功运行模拟器
-> 3. 导入`Android Studio`阅读源码，一开始可以先`exclude`掉所有模块，然后再把需要的模块的`java`目录标记为`Sources Root`，例如要导入`frameworks`，不要直接把整个目录标记为源码，而是把`frameworks/base/core/java`标记为源码，否则会出现代码无法正确跳转的问题
+> - 同步代码时使用网上提供好的重试脚本
+> - 自己用的Mac电脑编译时选择`aosp_x86-eng`，成功运行模拟器
+> - 导入`Android Studio`阅读源码，一开始可以先`exclude`掉所有模块，然后再把需要的模块的`java`目录标记为`Sources Root`，例如要导入`frameworks`，不要直接把整个目录标记为源码，而是把`frameworks/base/core/java`标记为源码，否则会出现代码无法正确跳转的问题
 
 ## 成果
 
@@ -41,12 +41,14 @@
 
 #### Activity
 
-1. [Activity.setContentView()源码分析](./doc/Activity.setContentView()源码分析.md)
+- [Activity.setContentView()源码分析](./doc/Activity.setContentView()源码分析.md)
 
 #### Window
 
-1. [寻找Activity布局树的根](./doc/寻找Activity布局树的根.md)
+- [寻找Activity布局树的根](./doc/寻找Activity布局树的根.md)
 
 ### Linux Kernel
 
 #### Binder(IPC)
+
+-  [Binder学习资料汇总](doc/Binder学习资料汇总.md) 
