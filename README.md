@@ -46,6 +46,7 @@
 #### Window
 
 - [寻找Activity布局树的根](./doc/寻找Activity布局树的根.md)
+- [ViewRootImpl.setView跨进程部分分析](doc/ViewRootImpl.setView跨进程部分分析.md)
 
 ### Linux Kernel
 
