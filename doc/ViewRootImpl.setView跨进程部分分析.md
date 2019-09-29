@@ -503,4 +503,4 @@ static class W extends IWindow.Stub {
 
 ## 小结
 
-在 [寻找Activity布局树的根](寻找Activity布局树的根.md) 一文中，提到了`WindowManager`接口是用来与真正的`window manager`进行通讯，经过以上的分析可以知道，`WindowManagerService`就是真正的`window manager`，而且是存在于系统进程`system_process`中的。同时，每个进程在`system_process`进程都拥有对应的`Session`实例和存在于本地进程的代理对象`IWindowSession.Stub.Proxy`。当应用进程想要添加窗体时（例如`Activity`、`Dialog`，`PopupWindow`等等），会先创建视图树的根`ViewRootImpl`，经过`ViewRootImpl.setView()`函数调用，最终会跨进程调用到`Session.addToDisplay()`函数，该函数内部又调用`WindowManagerService.addWindow()`函数进行权限判断、`token`检查以及`IWindow`保存，最终才完成窗体的添加。
+在 [寻找Activity布局树的根](寻找Activity布局树的根.md) 一文中，提到了`WindowManager`接口是用来与真正的`window manager`进行通讯，经过以上的分析可以知道，`WindowManagerService`就是真正的`window manager`，而且是存在于系统进程`system_process`中的。同时，每个进程在`system_process`进程都拥有对应的`Session`实例和存在于本地进程的代理对象`IWindowSession.Stub.Proxy`。当应用进程想要添加窗体时（例如`Activity`、`Dialog`），会先创建视图树的根`ViewRootImpl`，经过`ViewRootImpl.setView()`函数调用，最终会跨进程调用到`Session.addToDisplay()`函数，该函数内部又调用`WindowManagerService.addWindow()`函数进行权限判断、`token`检查以及`IWindow`保存，最终才完成窗体的添加。
