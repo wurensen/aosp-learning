@@ -256,7 +256,7 @@ public final class WindowManagerImpl implements WindowManager {
 
 大概认识了上面提到的几个关键类，接下来可以去分析`DecorView`到底是怎样被添加到系统的`window manager`了。
 
-如何找到对应的函数调用栈？可以从`WindowManagerImpl.addView()`开始，发现调用该函数的地方比较多，可以通过打断点的方式来找到准确的入口。通过在编译后运行的模拟器的上随意打开一个`app`，如`Calendar`，可以找到调用的地方：`Activity.handleResumeActivity()`，代码如下：
+如何找到对应的函数调用栈？可以从`WindowManagerImpl.addView()`开始，发现调用该函数的地方比较多，可以通过打断点的方式来找到准确的入口。通过在编译后运行的模拟器的上随意打开一个`app`，如`Calendar`，可以找到调用的地方：`ActivityThread.handleResumeActivity()`，代码如下：
 
 ```java
 @Override
