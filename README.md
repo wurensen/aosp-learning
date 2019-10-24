@@ -10,6 +10,10 @@
 
 ![ The Android software stack](https://developer.android.com/guide/platform/images/android-stack_2x.png)
 
+推荐阅读[Android系统架构开篇](http://gityuan.com/android/)，对整个系统架构有更深入的理解，贴一张来自该文章的系统启动架构图：
+
+![系统启动架构图](http://gityuan.com/images/android-arch/android-boot.jpg)
+
 ## 目标和分析方法
 
 ### 目标
@@ -53,3 +57,7 @@
 #### Binder(IPC)
 
 -  [Binder学习资料汇总](doc/Binder学习资料汇总.md) 
+
+### Android进程
+
+- [Android进程学习资料汇总](doc/Android进程学习资料汇总.md) 
