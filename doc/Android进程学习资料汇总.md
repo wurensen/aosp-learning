@@ -35,7 +35,7 @@
 `SystemServer`进程（进程名：`system_server`）是在`Zygote`进程还未进入`LocalSocket`监听前`fork`出来的，它的初始化过程包含了：
 
 1. 启动`Binder`线程池，这样就可以与其他进程进行`Binder`跨进程通信
-2. 创建`SystemServiceManager`，，它用来对系统服务进行创建、启动和生命周期管理
+2. 创建`SystemServiceManager`，它用来对系统服务进行创建、启动和生命周期管理
 3. 多个系统服务的启动：引导服务、核心服务、其他服务；这些服务包括核心的`ActivityManagerService`、`PowerManagerService`，以及`WindowManagerService`等
 
 - [Android系统启动流之SystemServer进程启动](https://jsonchao.github.io/2019/03/03/Android系统启动流之SystemServer进程启动/)

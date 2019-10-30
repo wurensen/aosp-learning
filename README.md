@@ -61,3 +61,4 @@
 ### Android进程
 
 - [Android进程学习资料汇总](doc/Android进程学习资料汇总.md) 
+- [应用主线程ActivityThread](doc/应用主线程ActivityThread.md)
