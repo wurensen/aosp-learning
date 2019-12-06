@@ -32,7 +32,7 @@
 
 ## SystemServer进程
 
-`SystemServer`进程（进程名：`system_server`）是在`Zygote`进程还未进入`LocalSocket`监听前`fork`出来的，它的初始化过程包含了：
+`SystemServer`进程（进程名：`system_server`，在`DDMS`中名称设置为`system_process`）是在`Zygote`进程还未进入`LocalSocket`监听前`fork`出来的，它的初始化过程包含了：
 
 1. 启动`Binder`线程池，这样就可以与其他进程进行`Binder`跨进程通信
 2. 创建`SystemServiceManager`，它用来对系统服务进行创建、启动和生命周期管理

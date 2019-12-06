@@ -2,7 +2,7 @@
 
 # 应用主线程ActivityThread
 
-在关于[Android进程](Android进程学习资料汇总.md)的一文中，不管是系统进程还是应用进程，最终都会执行`ActivityThread`相关的方法。
+在关于[Android进程学习资料汇总](Android进程学习资料汇总.md)的一文中，不管是系统进程还是应用进程，最终都会执行`ActivityThread`相关的方法。
 
 ## 类定义
 
