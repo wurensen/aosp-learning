@@ -43,6 +43,8 @@
 
 > 目录结构对应于上文架构图，有些文章内容会涉及到多个部分。
 
+- [Handler消息机制](./doc/Handler消息机制.md)
+
 #### Activity
 
 - [Activity.setContentView()源码分析](./doc/Activity.setContentView()源码分析.md)
