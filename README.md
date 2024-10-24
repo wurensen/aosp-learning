@@ -66,3 +66,7 @@
 - [应用主线程ActivityThread](doc/应用主线程ActivityThread.md)
 - [应用进程启动流程分析](doc/应用进程启动流程分析.md)
 
+### 其它
+
+- [Android请求usb权限流程分析](doc/Android请求usb权限流程分析.md)
+
